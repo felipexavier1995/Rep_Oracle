@@ -1,5 +1,9 @@
 --- command we can analyse all backup for any day.
 
+--- command for execute a backup in our databse system.(PS: execute inside RMAN tools)
+backup archivelog all
+
+
 ------------------------------------------------------------------------------------------
 
 set pages 200
