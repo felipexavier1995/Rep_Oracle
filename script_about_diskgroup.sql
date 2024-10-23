@@ -44,6 +44,12 @@ drop diskgroup ORA_TEST including cotents;
 
 alter diskgroup ORADATA (or ORAFRA) drop disk 'DATA04' -- remove disk 
 */
+-------------------------------------------------------------------------------------
+--- command for view all our diskgroup at moment.
+
+select * from v$asm_diskgroup;
+-------------------------------------------------------------------------------------
+
 
 
 
