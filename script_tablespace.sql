@@ -98,6 +98,8 @@ DATAFILE '+ORADATA'                -- Datafile name.
 SIZE 1M AUTOEXTEND
 ON NEXT 10M
 MAXSIZE 4096M;
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- query for delete any tablespace in our system.
 
-
-
+drop tablespace -- here type tablespace name.
+including contents and datafiles;
