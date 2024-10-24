@@ -83,7 +83,21 @@ order by 6
 ALTER TABLESPACE RECURSOS_HUMANOS
 ADD DATAFILE 'RH_02' SIZE 1M;
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- command where we can alter your datafile (with ASM or without ASM)
 
+-- Without ASM
+CREATE TABLESPACE RECURSOS_HUMANOS -- Tablaspace name
+DATAFILE 'RH_01.DBF'               -- Datafile name.
+SIZE 1M AUTOEXTEND                 
+ON NEXT 10M
+MAXSIZE 4096M;
+
+-- With ASM
+CREATE TABLESPACE RECURSOS_HUMANOS -- Tablespace name.
+DATAFILE '+ORADATA'                -- Datafile name.
+SIZE 1M AUTOEXTEND
+ON NEXT 10M
+MAXSIZE 4096M;
 
 
 
