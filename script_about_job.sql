@@ -38,3 +38,11 @@ select log_date, owner, job_name, status
 from dba_scheduler_job_log
 where job_name like '%JOB-EM-QUESTAO%' and status in ('START');
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- Checking what if running in 24hrs.
+select
+    log_date, owner, job_name, status
+  from dba_scheduler_job_log
+  where
+    log_date > sysdate-(1/24) and
+    owner in ('SYS', 'SYSTEM', 'WMSYS', 'XDB') 
+    and status in ('STOPPED','FAILED');
