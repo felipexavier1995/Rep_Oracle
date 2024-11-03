@@ -46,3 +46,9 @@ select
     log_date > sysdate-(1/24) and
     owner in ('SYS', 'SYSTEM', 'WMSYS', 'XDB') 
     and status in ('STOPPED','FAILED');
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- It's script for delete any job in your system.
+BEGIN
+   DBMS_JOB.REMOVE ('insert_name_job'); --Here we can write of job name.
+END;
+/
