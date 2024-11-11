@@ -24,3 +24,18 @@ Enjoy this's repository in your work and improves them.
 <br>
 :books: - All Owner
 </br>
+<br>
+:books: - Archive Log
+</br>
+<br>
+:books: - Jobs
+</br>
+<br>
+:books: - Tablespace
+</br>
+<br>
+:books: - ASM
+</br>
+<br>
+:books: - PDB and RMAN
+</br>
