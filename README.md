@@ -39,3 +39,6 @@ Enjoy this's repository in your work and improves them.
 <br>
 :books: - PDB and RMAN
 </br>
+<br>
+:books: - Backup
+</br>
